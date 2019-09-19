@@ -73,7 +73,7 @@ dt_lyrics %>%
 ```
 
 
-First, let’s take a look at the number of characters of stemmed words by genre. As you can see, the number of characters used in *Rock* is the biggest, even 2 times more than that of *Hip-Hop*, the next frequent genre. I looked at the *dt_lyrics* dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts. For the purpose, two genres, [**Rock**](https://en.wikipedia.org/wiki/Rock_music) and [**Indie**](https://en.wikipedia.org/wiki/Independent_music), are chosen to see if there are some differences.
+First, let’s take a look at the number of characters of stemmed words by genre. As you can see, the number of characters used in *Rock* is the biggest, even 2 times more than that of *Hip-Hop*, the next frequent genre. I looked at the *dt_lyrics* dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts. For the purpose of simplicity, two genres, [**Rock**](https://en.wikipedia.org/wiki/Rock_music) and [**Indie**](https://en.wikipedia.org/wiki/Independent_music), are chosen to see if there are some differences.
 
 ---
 
@@ -164,7 +164,7 @@ gr <- a %>%
 grid.arrange(gh, gr, nrow = 1)
 ```
 
-All eight emotions are expressed at word counts rates. At the first plot, joy, sadness, trust have the highest frequencies in use than others. In addition, the right plot shows the density distribution of skewness, which tells us that emotions such as surprise, disgust, fear are approximately normally distributed but those such as joy, sadness, anger are highly skewed.
+All eight emotions are expressed at word counts rates. At the first plot, joy, sadness, trust have the highest frequencies in use than others. In addition, the right plot shows the density distribution of emotions, which tells us that emotions such as surprise, disgust, fear are approximately normally distributed but those such as joy, sadness, anger are highly skewed.
 
 ### What about Hip-Hop, Indie, Rock?
 
@@ -283,5 +283,7 @@ Interestingly, not all genres have the similar emotions distribution. Major diff
 + Emotions used in different genres are distributed significantly different by time.
 
 
+## Disclaimer
 
+The purpose of this project is to demonstrate the exploratory data analysis, not statistical test results. When *significantly different* is mentioned, keep in mind that it does not result from a statistical test.
 
