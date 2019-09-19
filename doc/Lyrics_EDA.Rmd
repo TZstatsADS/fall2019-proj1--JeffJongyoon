@@ -32,8 +32,12 @@ ___
 
 ![](../figs/title1.jpeg) 
 
+\newline
+\newline
+\newline
 
-People have been living in a world full of various sentiments such as excitements, sadness, happiness, etc. Songs have been used as representatives of emotions towards love, politics and even more. In this project, it will be showing some of characteristics that different genres have inherited.
+
+People have been living in a world full of various sentiments such as excitements, sadness, happiness, etc. Songs have been used as representatives of emotions towards love, politics and even more. In this project, it will deliver some interesting findings about songs.
 
 
 
@@ -69,7 +73,7 @@ dt_lyrics %>%
 ```
 
 
-In order to look for some chracteristics in genres, the word counts are cacluated. The plot shows that there are obviously a number of words used in **Rock** than other genres. Two genres, [**Rock**](https://en.wikipedia.org/wiki/Rock_music) and [**Indie**](https://en.wikipedia.org/wiki/Independent_music), are chosen to see if there are some differences.
+First, let’s take a looki at the number of characters of stemmed words by genre. As you can see, the number of characters used in Rock is the biggest, even 2 times more than that of Hip-Hop, the next frequent genre. I looked at the *dt_lyrics* dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts. For the purpose, two genres, [**Rock**](https://en.wikipedia.org/wiki/Rock_music) and [**Indie**](https://en.wikipedia.org/wiki/Independent_music), are chosen to see if there are some differences.
 
 ---
 
@@ -106,8 +110,7 @@ I<-word_tibble %>%
 include_graphics("../figs/I.png")
 ```
 
-
-Two plots show that two genres have top frequently used words in common. For example, they all talk about *youre*, *time*, *life* a lot. Major differences in frequencies are hard to distinguish and common words are frequently used regardless of genres.
+These are wordclouds that show which words are frequently used, presented in different sizes. Two plots show that two genres have top frequently used words in common. For example, they all talk about *youre*, *time*, *life* a lot. Major differences in frequencies are hard to distinguish and common words are frequently used regardless of genres.
 
 ---
 
@@ -115,7 +118,8 @@ Two plots show that two genres have top frequently used words in common. For exa
 
 ![](../figs/music1.png) 
 
-First, let's look at some of characteristis of stemmed words by the sentiment analysis referenced by [the NRC lexicon](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm). In each year, the frequencies of eight basic emotions were collected in percent and calculated to show the emotion distributions.
+
+We sing because we want to express our feelings through songs so the sentiment analysis is the most important part in this project. Let's look at some of characteristis of stemmed words by the sentiment analysis referenced by [the NRC lexicon](http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm). In each year, the frequencies of eight basic emotions were collected in percent and calculated to show the emotion distributions.
 
 
 ### Emotions distribution
@@ -188,7 +192,7 @@ word_tibble %>%
     axis.text = element_text(size = 15))
 ```
 
-Ridgeline plots are made to represent the distribution of emotions used in *Hip-Hop*, *Indie*, and *Rock*. Obviously, the emotions used in each of three genres are distributed very differently.
+This graph shows how different the emotions would be distributed depending on different genres. So ridgeline plots are made to represent the distribution of emotions used in *Hip-Hop*, *Indie*, and *Rock*. Obviously, the emotions used in each of three genres are distributed very differently.
 
 ---
 
@@ -215,7 +219,7 @@ word_tibble %>%
     axis.text = element_text(size = 15))
 ```
 
-Overall, joy and sadness are most used sentiments in songs regardless of genres, but the frequencies are starting to change constantly as time goes by.
+So I got curious if the sentiments of songs are distributed equally through the time spans. This plot represents the time series of each emotion by year. Overall, joy and sadness are most used sentiments in songs regardless of genres, but the frequencies are starting to change constantly as time goes by.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
 word_tibble %>%
@@ -259,8 +263,7 @@ word_tibble %>%
     axis.text = element_text(size = 15))
 ```
 
-Major differences in sentiments are found in *Rock* and *Indie*. The sentiment plot in *Rock* seems to follow the distribution of overall.
-Emotions used in different genres are distributed significantly different by time.
+Interestingly, not all genres have the similar emotions distribution. Major differences in sentiments are found in *Rock* and *Indie*. Those two plots above show that the sentiment plot in *Rock* seems to follow the distribution of the overall. However, the sentiment plot in *Indie* is telling a completely different series. Therefore, emotions used in different genres are distributed significantly different by time.
 
 ---
 
@@ -273,8 +276,9 @@ Emotions used in different genres are distributed significantly different by tim
 \newline
 \newline
 
++ Major differences in frequencies are hard to distinguish and common words are frequently used regardless of genres.
 
-+ Different genres, i.e. Rock and Indie, have top frequently used words in common.
++ Different genres, i.e. *Rock* and *Indie*, have top frequently used words in common.
 
 + Emotions used in different genres are distributed significantly different by time.
 
