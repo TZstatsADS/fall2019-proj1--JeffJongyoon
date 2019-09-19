@@ -73,7 +73,7 @@ dt_lyrics %>%
 ```
 
 
-First, let’s take a looki at the number of characters of stemmed words by genre. As you can see, the number of characters used in *Rock* is the biggest, even 2 times more than that of *Hip-Hop*, the next frequent genre. I looked at the *dt_lyrics* dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts. For the purpose, two genres, [**Rock**](https://en.wikipedia.org/wiki/Rock_music) and [**Indie**](https://en.wikipedia.org/wiki/Independent_music), are chosen to see if there are some differences.
+First, let’s take a look at the number of characters of stemmed words by genre. As you can see, the number of characters used in *Rock* is the biggest, even 2 times more than that of *Hip-Hop*, the next frequent genre. I looked at the *dt_lyrics* dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts. For the purpose, two genres, [**Rock**](https://en.wikipedia.org/wiki/Rock_music) and [**Indie**](https://en.wikipedia.org/wiki/Independent_music), are chosen to see if there are some differences.
 
 ---
 
