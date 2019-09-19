@@ -12,7 +12,7 @@ Term: Fall 2019
 + Projec title: Songs by genres
 + This project is conducted by Jongyoon Sohn
 
-+ Project summary: This project demonstrates that different music genres have various characteristics in terms of words counts, words usage, etc. Details are discussed in the doc folder.
++ Project summary: This project demonstrates that different music genres have various characteristics in terms of words counts, words usage, etc. Details are discussed in the doc folder. Required libraries can be found in the README.md in the doc folder.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
